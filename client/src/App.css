@@ -1,0 +1,58 @@
+.announcement { background: var(--plum); color: #f6d9a4; }
+.brand { display: flex; flex-direction: column; line-height: 1.1; }
+.brand-urdu { font-size: 24px; font-weight: 700; color: var(--rose); line-height: 1.7; }
+.brand-en { font-size: 12px; color: #6f6575; }
+.navbar .nav-link { color: inherit; text-decoration: none; }
+.navbar .nav-link:hover { color: var(--rose); }
+
+.hero { background: var(--blush); }
+.hero-urdu { font-size: clamp(30px, 4vw, 46px); font-weight: 700; color: var(--rose); line-height: 1.8; text-align: left; direction: rtl; }
+.hero-title { font-size: clamp(34px, 4.4vw, 56px); line-height: 1.12; max-width: 15ch; }
+.stars { color: var(--marigold); letter-spacing: 2px; }
+.hero-image { position: relative; border-radius: 24px; overflow: hidden; aspect-ratio: 4 / 4.2; max-height: 560px; }
+.hero-image img { object-fit: cover; }
+.hero-card { position: absolute; left: 16px; bottom: 16px; right: 16px; max-width: 300px; padding: 14px 16px; border-radius: 14px; background: rgba(255,250,245,.94); display: flex; flex-direction: column; gap: 2px; font-size: 13px; color: #6f6575; }
+.hero-card strong { color: var(--plum); font-size: 15px; }
+
+.collection-card { position: relative; display: block; width: 100%; min-height: 340px; padding: 0; border: 0; border-radius: 22px; overflow: hidden; text-align: left; color: #fff; background: var(--plum); }
+.collection-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+.collection-card:hover img { transform: scale(1.04); }
+.collection-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(25,10,30,.82), rgba(25,10,30,.05) 70%); }
+.collection-label { position: absolute; left: 26px; right: 26px; bottom: 24px; z-index: 1; display: flex; flex-direction: column; gap: 4px; }
+.collection-label small { color: #f6d9a4; font-size: 13px; }
+.collection-label strong { font-family: 'Fraunces', serif; font-size: clamp(26px, 3vw, 36px); font-weight: 400; }
+
+.section-title { font-size: clamp(28px, 3vw, 38px); }
+.search { width: 190px; }
+.product-card { border-radius: 18px; overflow: hidden; transition: box-shadow .2s; }
+.product-card:hover { box-shadow: 0 14px 34px rgba(42,19,48,.1); }
+.product-image { position: relative; aspect-ratio: 4 / 4.6; background: var(--blush); }
+.product-image > img { width: 100%; height: 100%; object-fit: cover; }
+.image-placeholder { height: 100%; display: grid; place-items: center; background: linear-gradient(140deg, var(--blush), #f3d3d6); }
+.image-placeholder span { font-size: 40px; color: var(--rose); font-weight: 700; }
+.product-name { font-family: 'Fraunces', serif; color: var(--plum); }
+
+.cart-section { background: var(--blush); }
+.score { font-family: 'Fraunces', serif; font-size: 88px; line-height: 1; color: var(--plum); }
+.review { border-left: 3px solid var(--marigold); padding-left: 20px; margin-bottom: 24px; max-width: 56ch; }
+.review p { font-family: 'Fraunces', serif; font-size: 22px; color: var(--plum); line-height: 1.4; margin-bottom: 8px; }
+
+.visit { background: var(--plum); color: #fff; }
+.visit dt { margin-top: 14px; color: var(--marigold); font-size: 13px; font-weight: 600; }
+.visit dd { margin: 0; }
+.visit a { color: inherit; text-decoration: none; }
+.visit a.btn-warning { color: var(--plum); }
+.visit-panel { background: var(--rose); padding: 40px; min-height: 220px; }
+.visit-panel span { font-size: clamp(40px, 6vw, 80px); font-weight: 700; line-height: 1.9; text-align: center; }
+
+.site-footer { background: #1d0d22; color: #d9cfdc; }
+.site-footer a { color: inherit; }
+.footer-brand .brand-urdu { color: var(--marigold); }
+.footer-brand .brand-en { color: #d9cfdc; }
+@media (max-width: 575px) { .search { width: 100%; } }
+
+/* Color photo thumbnails on product cards */
+.thumbs { position: absolute; left: 10px; right: 10px; bottom: 10px; display: flex; gap: 6px; overflow-x: auto; padding: 6px; border-radius: 12px; background: rgba(255,250,245,.88); }
+.thumbs button { flex: 0 0 auto; width: 42px; height: 42px; padding: 0; border: 2px solid transparent; border-radius: 8px; overflow: hidden; background: #fff; }
+.thumbs button.on { border-color: var(--rose); }
+.thumbs img { width: 100%; height: 100%; object-fit: cover; display: block; }
